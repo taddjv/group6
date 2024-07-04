@@ -2,7 +2,7 @@ import data from "../assets/data.js";
 import picture from "../assets/portrait.jpeg";
 import facebook from "../assets/facebook.png";
 import linkedin from "../assets/linkedin.png";
-import React, { useRef, useState } from "react";
+import React from "react";
 import "../notreEquipe.css";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
@@ -22,7 +22,7 @@ function NotreEquipe() {
           drag: "free",
           perPage: 4,
           autoScroll: {
-            pauseOnHover: false,
+            pauseOnHover: true,
             pauseOnFocus: false,
             rewind: false,
             speed: 1,

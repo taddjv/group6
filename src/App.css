@@ -9,6 +9,11 @@ body {
   /* font-family: theFont */
   font-family: "Roboto", sans-serif;
   font-weight: 100;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 html {
   scroll-behavior: smooth;
@@ -57,6 +62,7 @@ header {
 
 .bannerImage {
   width: 100%;
+  filter: brightness(15%);
 }
 
 .bannerQuote {
@@ -78,7 +84,9 @@ header {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   line-height: 80px;
-  animation: typing 2s steps(26), 0.5s step-end infinite alternate;
+  animation:
+    typing 2s steps(26),
+    0.5s step-end infinite alternate;
   border: 1px solid white;
 
   overflow: hidden;
@@ -158,17 +166,4 @@ header {
 }
 .links > a:active {
   text-decoration: none;
-}
-
-.aPropos {
-  /* width: 100%; */
-  margin: 152px 224px;
-}
-
-.ap-title {
-  font-size: 56px;
-}
-
-.ap-text {
-  font-size: 24px;
 }
