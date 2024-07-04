@@ -1,6 +1,6 @@
 import React from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import "../apropos.css ";
+import "../notreEquipe.css";
 
 function Apropos() {
   return (

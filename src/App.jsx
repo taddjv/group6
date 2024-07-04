@@ -1,25 +1,14 @@
 import "./App.css";
 import banner from "./assets/peopleBackground.jpeg";
-import logo from "./assets/greenLogo.png";
 import DownArrow from "./assets/downArrow.png";
 import NotreEquipe from "./components/NotreEquipe.jsx";
 import Apropos from "./components/Apropos";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <>
-      <header>
-        <a href="/" className="logo">
-          <img className="logoImage" src={logo} alt="Logo" />
-        </a>
-        <div className="links">
-          <a href="#a-propos">À propos</a>
-          <a href="#notre-equipe">Notre équipe</a>
-          <a href="/">Nos services</a>
-          {/* <a href="/">Blog</a> */}
-          <a href="/">Nous joindre</a>
-        </div>
-      </header>
+      <Navigation></Navigation>
 
       <section className="banner">
         <img className="bannerImage" src={banner} alt="Logo" />
