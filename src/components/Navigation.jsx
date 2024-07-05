@@ -64,7 +64,7 @@ function Navigation() {
             damping: 20,
           }}
         >
-          <img className="logoImage" src={logo} alt="Logo" />
+          {/* <img className="logoImage" src={logo} alt="Logo" /> */}
         </motion.a>
         <motion.div
           className="links"

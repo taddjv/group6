@@ -1,12 +1,16 @@
 @font-face {
-  font-family: theFont;
+  font-family: theFont-thin;
   src: url("./assets/Manrope-ExtraLight.ttf");
+}
+@font-face {
+  font-family: theFont;
+  src: url("./assets/Manrope-Regular.ttf");
 }
 body {
   width: 100vw;
   display: block;
   margin: 0;
-  /* font-family: theFont */
+  /* font-family: theFont-thin */
   font-family: "theFont", sans-serif;
   font-weight: 100;
   /* overflow-y: hidden;
@@ -20,105 +24,7 @@ html {
 }
 #root {
   width: 100%;
-}
-
-.banner {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-}
-
-.bannerImage {
-  width: 100%;
-  filter: brightness(15%);
-}
-
-.bannerQuote {
-  position: absolute;
-  z-index: 1;
-  top: 148px;
-  width: 50%;
-  height: 100%;
-}
-
-.bq-text {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 100%;
-  color: white;
-  font-size: 80px;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  line-height: 80px;
-  animation:
-    typing 2s steps(26),
-    0.5s step-end infinite alternate;
-  border: 1px solid white;
-
-  overflow: hidden;
-  font-family: monospace;
-}
-
-@keyframes typing {
-  0% {
-    opacity: 0;
-    width: 0;
-  }
-  100% {
-    opacity: 1;
-    width: 100%;
-  }
-}
-.scroll {
-  position: absolute;
-
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
-  z-index: 100000;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 24px 0;
-  text-decoration: none;
-
-  animation-name: floating;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-@keyframes floating {
-  0% {
-    transform: translate(-50%, 0);
-  }
-  50% {
-    transform: translate(-50%, 12px);
-  }
-  100% {
-    transform: translate(-50%, 0);
-  }
-}
-
-.scroll-text {
-  color: white;
-  font-size: 20px;
-}
-.scroll-logo {
-  height: 64px;
-  width: 64px;
-}
-
-.aPropos {
-  /* width: 100%; */
-  margin: 152px 224px;
-}
-
-.ap-title {
-  font-size: 56px;
-}
-
-.ap-text {
-  font-size: 24px;
+  gap: 8rem;
 }

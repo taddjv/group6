@@ -1,0 +1,13 @@
+.aPropos {
+  padding: 0 12rem;
+  max-width: 90rem;
+  margin: auto;
+}
+
+.ap-title {
+  font-size: 56px;
+}
+
+.ap-text {
+  font-size: 24px;
+}
