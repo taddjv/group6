@@ -82,7 +82,7 @@ function Navigation() {
         >
           <a href="#a-propos">À propos</a>
           <a href="#notre-equipe">Notre équipe</a>
-          <a href="/">Nos services</a>
+          <a href="#nos-services">Nos services</a>
           {/* <a href="/">Blog</a> */}
           <a href="/">Nous joindre</a>
         </motion.div>

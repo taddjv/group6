@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/banner.css";
-import banner from "../assets/peopleBackground.jpeg";
+// import banner from "../assets/peopleBackground.jpeg";
+import banner from "../assets/laywers.jpeg";
 import DownArrow from "../assets/downArrow.png";
 
 function Banner() {

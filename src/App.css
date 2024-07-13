@@ -3,15 +3,18 @@
   src: url("./assets/Manrope-ExtraLight.ttf");
 }
 @font-face {
-  font-family: theFont;
+  font-family: theFont-bold;
+  src: url("./assets/Manrope-ExtraBold.ttf");
+}
+@font-face {
+  font-family: theFont-regular;
   src: url("./assets/Manrope-Regular.ttf");
 }
 body {
   width: 100vw;
   display: block;
   margin: 0;
-  /* font-family: theFont-thin */
-  font-family: "theFont", sans-serif;
+  font-family: theFont-thin;
   font-weight: 100;
   /* overflow-y: hidden;
   overflow-x: hidden; */
