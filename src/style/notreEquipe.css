@@ -1,20 +1,15 @@
 .notreEquipe {
-  /* display: flex; */
-  /* height: 100vh; */
-  /* padding: 60px 36px; */
   width: 100vw;
 }
 .ne-title {
-  margin: 36px 224px;
-  font-size: 36px;
+  margin: 0 12rem;
+  margin-bottom: 2rem;
+  font-size: 56px;
 }
 .ne-card {
-  /* width: 33vw; */
-  /* margin: 0 36px; */
   border-top-right-radius: 25px;
 }
 .nec-image {
-  /* height: 70%; */
   width: 24vw;
   border-top-right-radius: 25px;
   margin-bottom: 12px;
