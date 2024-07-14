@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "../style/aPropos.css";
+import growth from "../assets/growth.png";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -28,17 +29,17 @@ function Apropos() {
         initial="hidden"
         variants={squareVariants}
       >
-        <div className="ap-title">À Propos</div>
-        <div className="ap-text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-          aperiam aspernatur consequatur quaerat, exercitationem iste accusamus
-          nulla, beatae inventore debitis nesciunt blanditiis. Explicabo dolores
-          maiores illo repellendus fugit ad atque. Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Harum aperiam aspernatur consequatur
-          quaerat, exercitationem iste accusamus nulla, beatae inventore debitis
-          nesciunt blanditiis. Explicabo dolores maiores illo repellendus fugit
-          ad atque.
+        <div>
+          {" "}
+          <span className="ap-title">À Propos</span>
+          <div className="ap-text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
+            aperiam aspernatur consequatur quaerat, exercitationem iste
+            accusamus nulla, beatae inventore debitis nesciunt blanditiis.
+          </div>
         </div>
+
+        <img className="ap-image" src={growth} alt="" />
       </motion.section>
     </>
   );

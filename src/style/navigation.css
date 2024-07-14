@@ -1,53 +1,44 @@
 header {
   position: absolute;
+  top: 0;
   z-index: 1;
   width: 100%;
-  transition: all 300ms ease-out;
-  top: 0;
-  /* background: rgba(0, 0, 0, 0.025); */
-
+  height: 60px;
+  /* border-bottom:1px solid white; */
   display: flex;
   flex-direction: column;
-  /* animation: drop 2s; */
-  font-family: "Basic Commercial;
+  justify-content: center;
+  align-items: flex-end;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 .logo {
   align-self: center;
 }
-.logoImage {
+/* .logoImage {
   display: block;
   height: 360px;
-}
-.social {
-  padding: 24px;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-.social-logo {
-  height: 24px;
-  width: 24px;
-  padding-left: 12px;
-}
-.sl-icon {
-  height: 24px;
-  width: 24px;
-}
+} */
 
 .links {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 24px;
 }
 .links > a {
   color: rgba(255, 255, 255, 1);
-  font-size: 24px;
-  padding: 10px 8px;
+  font-size: 16px;
+  margin-right: 8px;
   border-bottom: 2px solid rgba(56, 122, 61, 0);
-  transition: ease-in 0.20s;
-  text-transform:uppercase;
+  transition: ease-in 0.2s;
+  text-transform: uppercase;
+  font-family: theFont-thin;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+.links > a:last-child {
+  margin-right: 30px;
 }
 .links > a:link {
   text-decoration: none;

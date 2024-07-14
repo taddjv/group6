@@ -1,10 +1,5 @@
 import React, { useEffect } from "react";
 import logo from "../assets/greenLogoo.png";
-import insta from "../assets/instagram.svg";
-import tiktok from "../assets/tiktok.svg";
-import facebook from "../assets/facebook.svg";
-import linkedin from "../assets/linkedin.svg";
-import youtube from "../assets/youtube.svg";
 import "../style/navigation.css";
 import {
   motion,
@@ -36,23 +31,7 @@ function Navigation() {
             damping: 20,
             delay: 0.5,
           }}
-        >
-          <a className="social-logo" href="wwww.youtube.com">
-            <img className="sl-icon" src={insta} alt="" />
-          </a>{" "}
-          <a className="social-logo" href="wwww.youtube.com">
-            <img className="sl-icon" src={youtube} alt="" />
-          </a>{" "}
-          <a className="social-logo" href="wwww.youtube.com">
-            <img className="sl-icon" src={facebook} alt="" />
-          </a>{" "}
-          <a className="social-logo" href="wwww.youtube.com">
-            <img className="sl-icon" src={tiktok} alt="" />
-          </a>{" "}
-          <a className="social-logo" href="wwww.youtube.com">
-            <img className="sl-icon" src={linkedin} alt="" />
-          </a>
-        </motion.div>
+        ></motion.div>
         <motion.a
           href="/"
           className="logo"

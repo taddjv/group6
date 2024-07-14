@@ -13,16 +13,21 @@
 }
 .RVButton {
   position: absolute;
-  bottom: 20rem;
-  left: 50%;
-  transform: translate(-50%, 0);
+  bottom: 10rem;
+  right: 10rem;
+  /* transform: translate(-50%, 0); */
   z-index: 1000;
   background: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   padding: 12px;
-  border: 2px solid rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+
   text-transform: uppercase;
+  font-family: theFont-thin;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 .RVButton:hover {
   background: rgba(255, 255, 255, 1);
@@ -38,7 +43,7 @@
   color: white;
   font-size: 80px;
   text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   line-height: 80px;
   animation:
     typing 2s steps(26),
@@ -94,6 +99,46 @@
   font-size: 20px;
 }
 .scroll-logo {
-  height: 64px;
-  width: 64px;
+  color: white;
+  transform: rotate(90deg);
+  font-size: 56px;
+  text-align: center;
+  margin: auto;
+}
+.banner-side {
+  /* padding: 0 24px; */
+  margin-left: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+  height: calc(100% - 60px);
+}
+.bs-text {
+  color: white;
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  letter-spacing: -2px;
+}
+.bs-line {
+  /* height: calc(100% - 180px - 280px - 58px - 48px ); */
+  height: 10%;
+  width: 0;
+  margin: 28px auto;
+  border: 0.5px solid white;
+}
+.social-logo {
+  height: 24px;
+  width: 24px;
+  padding-bottom: 12px;
+}
+.sl-icon {
+  height: 24px;
+  width: 24px;
+}
+.social-logo:last-child {
+  margin-bottom: 48px;
 }
