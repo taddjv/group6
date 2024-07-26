@@ -12,8 +12,9 @@
 .RVButton {
   position: absolute;
   bottom: 10rem;
-  right: 10rem;
-  /* transform: translate(-50%, 0); */
+  left: 50%;
+  bottom: 16rem;
+  transform: translate(-50%, 0);
   z-index: 10;
   background: rgba(255, 255, 255, 0);
   color: rgba(255, 255, 255, 1);
@@ -43,7 +44,9 @@
   text-transform: uppercase;
   /* font-family: "Roboto", sans-serif; */
   line-height: 80px;
-  animation: typing 2s steps(26), 0.5s step-end infinite alternate;
+  animation:
+    typing 2s steps(26),
+    0.5s step-end infinite alternate;
   border: 1px solid white;
 
   overflow: hidden;
@@ -103,13 +106,14 @@
 }
 .banner-side {
   margin-left: 60px;
+  /* padding: 2rem 0; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   z-index: 10;
   position: absolute;
   bottom: 0;
-  height: calc(100% - 60px);
+  height: 100%;
 }
 .bs-text {
   color: white;
@@ -117,13 +121,14 @@
   writing-mode: vertical-lr;
   text-orientation: upright;
   letter-spacing: -2px;
+  padding-top: 52px;
 }
 .bs-line {
   /* height: calc(100% - 180px - 280px - 58px - 48px ); */
-  height: 10%;
+  height: 30%;
   width: 0;
   margin: 28px auto;
-  border: 0.5px solid white;
+  border-left: 1px solid white;
 }
 .social-logo {
   height: 24px;
@@ -135,5 +140,5 @@
   width: 24px;
 }
 .social-logo:last-child {
-  margin-bottom: 48px;
+  padding-bottom: 52px;
 }

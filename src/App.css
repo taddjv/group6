@@ -10,6 +10,9 @@
   font-family: theFont-regular;
   src: url("./assets/Manrope-Regular.ttf");
 }
+*::-webkit-scrollbar {
+  display: none;
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -17,11 +20,6 @@ body {
   margin: 0;
   font-family: theFont-thin;
   font-weight: 100;
-  /* overflow-y: hidden;
-  overflow-x: hidden; */
-}
-body::-webkit-scrollbar {
-  display: none;
 }
 html {
   scroll-behavior: smooth;
@@ -31,9 +29,9 @@ html {
   height: 100%;
   overflow: hidden;
   overflow-y: scroll;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 4rem; */
 }
 
 .some {
