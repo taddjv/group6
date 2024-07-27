@@ -13,12 +13,12 @@ function App() {
       <Banner></Banner>
       <Apropos></Apropos>
       <NosServices></NosServices>
-      <section id="notre-equipe" className="hidden notreEquipe">
+      {/* <section id="notre-equipe" className="hidden notreEquipe">
         <NotreEquipe></NotreEquipe>
-      </section>
+      </section> */}
       <Form></Form>
       {/* <div className="blog"></div> */}
-      <div className="nousJoindre"></div>
+      {/* <div className="nousJoindre"></div> */}
     </>
   );
 }

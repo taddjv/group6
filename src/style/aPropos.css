@@ -1,29 +1,22 @@
-.aPropos {
-  padding: 0 12rem;
-  max-width: 90rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.aPropos > div {
-  width: 50%;
-}
-
 .ap-title {
-  font-size: 36px;
+  font-size: 64px;
   text-transform: uppercase;
-  margin-bottom: 28px;
-  border-bottom: 2px solid #387a3d;
-  width: fit-content;
-
-  display: block;
+  color: white;
+  text-align: center;
+  /* width: 100%; */
+  margin: auto;
+}
+.ap-title:hover {
+  border-bottom: 2px solid white;
 }
 
 .ap-text {
   font-size: 24px;
+  color: white;
 }
-.ap-image {
-  height: 28rem;
-  width: 30rem;
+.aPropos {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
 }

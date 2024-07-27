@@ -10,7 +10,7 @@ import DownArrow from "../assets/downArrow.png";
 
 function Banner() {
   return (
-    <section className="banner">
+    <section id="accueil" className="banner">
       <img className="bannerImage" src={banner} alt="Logo" />
       <button className="RVButton">Prendre un Rendez-Vous</button>
       <a href="#a-propos" className="scroll">

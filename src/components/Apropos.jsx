@@ -3,6 +3,7 @@ import "../style/aPropos.css";
 import growth from "../assets/growth.png";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import room from "../assets/room.jpg";
 
 function Apropos() {
   const squareVariants = {
@@ -21,15 +22,9 @@ function Apropos() {
 
   return (
     <>
-      <motion.section
-        id="a-propos"
-        className="aPropos"
-        ref={ref}
-        animate={controls}
-        initial="hidden"
-        variants={squareVariants}
-      >
-        <div>
+      <section id="a-propos" className="banner">
+        <img className="bannerImage" src={room} alt="Logo" />
+        <div className="aPropos">
           {" "}
           <span className="ap-title">À Propos</span>
           <div className="ap-text">
@@ -38,9 +33,7 @@ function Apropos() {
             accusamus nulla, beatae inventore debitis nesciunt blanditiis.
           </div>
         </div>
-
-        <img className="ap-image" src={growth} alt="" />
-      </motion.section>
+      </section>
     </>
   );
 }

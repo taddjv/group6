@@ -15,23 +15,22 @@ function Navigation() {
         <div className="links">
           <div className="links-box">
             <div className="lb-box"></div>
+            <a href="#accueil">Accueil</a>
+          </div>
+          <div className="links-line"></div>
+          <div className="links-box">
+            <div className="lb-box"></div>
             <a href="#a-propos">À propos</a>
           </div>
-          {/* <a href="#a-propos">À propos</a> */}
           <div className="links-line"></div>
           <div className="links-box">
             <div className="lb-box"></div>
-            <a href="#nos-services">Mes services</a>
+            <a href="#mes-services">Mes services</a>
           </div>
           <div className="links-line"></div>
           <div className="links-box">
             <div className="lb-box"></div>
-            <a href="/">Blog</a>
-          </div>
-          <div className="links-line"></div>
-          <div className="links-box">
-            <div className="lb-box"></div>
-            <a href="/">Me joindre</a>
+            <a href="#me-joindre">Me joindre</a>
           </div>
         </div>
       </header>
