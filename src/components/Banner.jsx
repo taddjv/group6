@@ -6,7 +6,6 @@ import linkedin from "../assets/linkedin.svg";
 import youtube from "../assets/youtube.svg";
 import "../style/banner.css";
 import banner from "../assets/laywers.jpeg";
-import DownArrow from "../assets/downArrow.png";
 
 function Banner() {
   return (

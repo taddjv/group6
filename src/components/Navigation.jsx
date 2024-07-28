@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import logo from "../assets/greenLogoo.png";
 import "../style/navigation.css";
 import {
   motion,
