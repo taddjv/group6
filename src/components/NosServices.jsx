@@ -14,7 +14,7 @@ function NosServices() {
   return (
     <section id="mes-services" className="nos-services">
       <img className="bannerImage" src={books} alt="" />
-      <div className="ns-title">Nos Services</div>
+      <div className="ns-title">Mes Services</div>
       <div className="all-services">
         <div className="service">
           <img className="s-logo" src={assurance} alt="" />

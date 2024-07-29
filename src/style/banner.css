@@ -1,6 +1,6 @@
 .banner {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
   position: relative;
 }
 
@@ -11,6 +11,22 @@
   position: absolute;
   z-index: -1;
   filter: brightness(0.5);
+}
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: -webkit-fill-available;
+  max-width: 500px;
+}
+.banner-title {
+  z-index: 10;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-family: theFont-thin;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
 }
 .RVButton {
   position: absolute;
@@ -27,7 +43,6 @@
 
   text-transform: uppercase;
   font-family: theFont-thin;
-  font-weight: 100;
   letter-spacing: 0.5px;
   word-spacing: 1px;
 }
@@ -125,6 +140,7 @@
   text-orientation: upright;
   letter-spacing: -2px;
   padding-top: 52px;
+  white-space: nowrap;
 }
 .bs-line {
   /* height: calc(100% - 180px - 280px - 58px - 48px ); */
@@ -145,3 +161,26 @@
 .social-logo:last-child {
   padding-bottom: 52px;
 }
+
+@media only screen and (max-width: 960px) {
+  .banner-side {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .bs-text {
+    display: none;
+  }
+  .bs-line {
+    display: none;
+  }
+  .social-logo {
+    padding-right: 12px;
+    margin-top: 12px;
+  }
+  .banner-image {
+    margin-top: calc(100vh / 10);
+  }
+}
+

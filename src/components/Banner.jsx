@@ -4,6 +4,7 @@ import tiktok from "../assets/tiktok.svg";
 import facebook from "../assets/facebook.svg";
 import linkedin from "../assets/linkedin.svg";
 import youtube from "../assets/youtube.svg";
+import logo from "../assets/1.png";
 import "../style/banner.css";
 import banner from "../assets/laywers.jpeg";
 
@@ -11,11 +12,11 @@ function Banner() {
   return (
     <section id="accueil" className="banner">
       <img className="bannerImage" src={banner} alt="Logo" />
+      <img className="banner-image" src={logo} alt="" />
       <button className="RVButton">Prendre un Rendez-Vous</button>
       <a href="#a-propos" className="scroll">
         <div className="scroll-text">Allez en bas</div>
         <span className="scroll-logo">{">"}</span>
-        {/* <img className="" src={DownArrow} /> */}
       </a>
       <div className="banner-side">
         <span className="bs-text">médias sociaux</span>

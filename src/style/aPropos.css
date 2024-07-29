@@ -4,27 +4,69 @@
   color: white;
   text-align: center;
   /* width: 100%; */
+  font-family: title-bold;
+
   margin: auto;
+  margin-bottom: 1rem;
 }
-.ap-title:hover {
-  border-bottom: 2px solid white;
+.ap-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 0 220px;
 }
 
 .ap-text {
-  font-size: 24px;
+  font-size: 18px;
   color: white;
+  text-align:center;
+
+  text-transform: uppercase;
+  font-family: theFont-thin;
+  font-weight: 100;
+  letter-spacing: 0.5px;
 }
 .aPropos {
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:2rem
 }
 
 .ap-comments {
-  border: 1px solid black;
-  margin: 10rem;
-  height: 6rem;
-  position: absolute;
-  width: 900px;
+  /* border-top: 1px solid white;
+  border-bottom: 1px solid white; */
+  /* max-width: 400px; */
+  width: -webkit-fill-available;
+  padding: 5rem 0;
+  color: white;
+  text-align: center;
+}
+
+.comment-text {
+  font-family: theFont-regular;
+  font-size: 1.25rem;
+  margin: 1rem;
+  padding: 0 1rem;
+}
+.comments-name {
+  font-style: italic;
+}
+
+
+@media only screen and (max-width: 960px) {
+  .ap-container {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 220px; */
+    padding: 0 calc(100vw / 25);
+  }
+  .ap-title {
+    font-size: 40px;
+  }
 }
